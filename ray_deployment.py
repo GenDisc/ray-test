@@ -29,7 +29,7 @@ from vllm.entrypoints.openai.api_server import build_async_engine_client_from_en
 logger = logging.getLogger("ray.serve")
 
 # serve.start(detached=True, http_options={"host": "0.0.0.0"})
-serve.start(detached=True, http_options={"host": "0.0.0.0", "port": "443"})
+serve.start(detached=True, http_options={"host": "0.0.0.0", "port": "8000"})
 app = FastAPI()
 
 
